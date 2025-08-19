@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.primario {
+   background-color: #3d1c09;
+   display: flex;
+   /* alinhar os itens no centro verticalmente */
+   align-items: center;
+   
+}
+a  .logotipo {
+    width: 130px;
+    padding: 8px;
+    
+
+}
+
+ .titulo-h1 {
+    font-family: "Delius", cursive;
+    color: rgb(255, 235, 235);
+    cursor: pointer;
+    /* animação ao passar o mouse */
+    transition: 0.8s;
+    /* auto > centralizar horizontalmente o elemento */
+    margin: 0 auto 0;
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/* efeito de mudança de cor ao passa o mouse */
+.titulo-h1:hover{
+    color: rgb(18, 116, 196);
+}
+ 
+
+
+.secundario {
+    /* cobrir completamente a caixa (elemento) onde a imagem está aplicada.*/
+    background: url(assets/restaurante1.jpg) no-repeat top center/cover;
+    /* posiciona o meio da imagem no centro do header. */
+    background-position: center;
+    height: 600px;
+    
+    
+}
+
+.menu-cardapio {
+   text-align: center;
+   padding-top: 35px;
+   font-size: 35px;
+    font-family: "Syne Mono", monospace;
+    color: rgb(22, 16, 16);
+   
+}
+.diasSemanais {
+    display: flex;
+    /* distanciamento dos elementos filhos */
+    gap: 2rem;
+     /* Centraliza na horizontal */
+    justify-content: center;
+     /* Centraliza na vertical */
+    align-items: center;
+    border: 1px solid rgba(158, 158, 158, 0.5);
+    padding: 20px;
+    /* distanciamento do elemento de cima */
+    margin-top: 40px;
+    /* elimina o pontinho do li */
+    list-style-type: none;
+    
+}
+
+.diasSemanais {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* alinhar os itens no centro horizontalmente */
+    justify-content: center;
+    /* alinhar os itens no centro verticalmente */
+    align-items: center;
+    gap: 3rem;
+    /* border: 1px solid; */
+    margin: 0 auto 0;
+    width: 100%;
+    max-width: 1000px;
+}
+
+h2 {
+    text-align: center;
+    color: #311504;
+    font-family: "Syne Mono", monospace;
+}
+
+main ul {
+     /* divide em duas colunas */ 
+   columns: 2;
+   /* espaço entre as colunas */
+   column-gap: 100px;
+   /* numeração automática */
+   list-style: decimal;
+   text-align: center;
+
+}
+
+main ul li {
+    font-size: 20px;
+    color: #000000;
+    font-family: "Albert Sans", sans-serif;
+}
+
+
+
+.segunda-h2 {
+    /* distanciando do topo */
+    margin-top: 50px;
+}
+
+.informacoes {
+    margin-top: 45px;
+}
+
+.informacoes h2 {
+     
+    font-weight: bolder;
+    text-align: center;
+    color: #155f4f;
+    cursor: pointer;
+    transition: 0.8s;
+
+}
+
+.informacoes h2:hover {
+    color: #103d33;
+
+}
+
+.redes {
+    margin-top: 20px;
+      display: flex;
+        gap: 45px;
+        font-size: 22px;
+       justify-content: center;
+       padding: 8px;
+}
+
+.redes a {
+        padding: 10px;
+        border-radius: 50%;
+        transition:  0.9s; 
+        color: #213535;
+
+        
+    }
+
+    .redes a:hover {
+     background-color: rgba(154, 59, 192, 0.178);
+  
+
+}
+
+
+/* estilo para dispositiveis móveis */
+@media (max-width: 932px) {
+    .primario {
+        flex-direction: column;
+    }
+
+    .titulo-h1 {
+        text-align: center;
+        padding: 8px;
+        padding-bottom: 24px;
+    }
+
+    .menu-cardapio {
+        padding: 8px;
+        /* distanciando do topo */
+        margin-top: 25px;
+    }
+
+    .diasSemanais {
+    /* “Se os itens não couberem em uma linha, mande o que sobrar para a próxima linha.” */
+    flex-wrap: wrap;
+    }
+
+    main ul {
+       display: flex;
+       flex-direction: column;
+       /* espaçamento entre elementos filhos */
+       gap: 8px;
+    }
+
+
+    .informacoes h2 {
+        padding: 7px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
