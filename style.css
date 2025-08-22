@@ -201,6 +201,10 @@ main ul li {
        flex-direction: column;
        /* espaçamento entre elementos filhos */
        gap: 8px;
+       /* alinhar os itens no centro horizontal */
+       justify-content: center;
+       /* alinhar os itens no centro verticalmente */
+       align-items: center;
     }
 
 
