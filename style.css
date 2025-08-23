@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -18,14 +19,14 @@
    
 }
 a  .logotipo {
-    width: 130px;
+    width: 100px;
     padding: 8px;
     
 
 }
 
  .titulo-h1 {
-    font-family: "Delius", cursive;
+    font-family: "Prociono", serif;
     color: rgb(255, 255, 255);
     cursor: pointer;
     /* animação ao passar o mouse */
@@ -36,12 +37,12 @@ a  .logotipo {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* efeito de mudança de cor ao passa o mouse */
 .titulo-h1:hover{
-    color: rgb(197, 255, 131);
+    color: rgb(150, 212, 199);
 }
  
 
@@ -185,6 +186,10 @@ li::marker {
         padding: 8px;
         padding-bottom: 24px;
         
+    }
+
+    h1 {
+        font-size: 25px;
     }
 
     .menu-cardapio {
