@@ -26,7 +26,7 @@ a  .logotipo {
 
  .titulo-h1 {
     font-family: "Delius", cursive;
-    color: rgb(255, 235, 235);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     /* animação ao passar o mouse */
     transition: 0.8s;
@@ -41,7 +41,7 @@ h1 {
 
 /* efeito de mudança de cor ao passa o mouse */
 .titulo-h1:hover{
-    color: rgb(18, 116, 196);
+    color: rgb(197, 255, 131);
 }
  
 
@@ -105,23 +105,24 @@ h2 {
     font-family: "Syne Mono", monospace;
 }
 
-main ul {
+main ol {
      /* divide em duas colunas */ 
    columns: 2;
    /* espaço entre as colunas */
    column-gap: 100px;
-   /* numeração automática */
-   list-style: decimal;
    text-align: center;
 
 }
 
-main ul li {
+main ol li {
     font-size: 20px;
     color: #000000;
     font-family: "Albert Sans", sans-serif;
 }
-
+/* alterando cor numeração */
+li::marker {
+    color: #21770b;
+}
 
 
 .segunda-h2 {
@@ -197,7 +198,7 @@ main ul li {
     flex-wrap: wrap;
     }
 
-    main ul {
+    main ol {
        display: flex;
        flex-direction: column;
        /* espaçamento entre elementos filhos */
