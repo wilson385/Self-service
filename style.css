@@ -183,7 +183,7 @@ main ul li {
         text-align: center;
         padding: 8px;
         padding-bottom: 24px;
-        text-align: center;
+        
     }
 
     .menu-cardapio {
@@ -202,11 +202,11 @@ main ul li {
        flex-direction: column;
        /* espaçamento entre elementos filhos */
        gap: 8px;
-       /* alinhar os itens no centro horizontals */
+        /* alinhar os itens no centro horizontals */
        justify-content: center;
        /* alinhar os itens no centro verticalmente */
        align-items: center;
-       
+
     }
 
 
